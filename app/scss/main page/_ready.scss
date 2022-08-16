@@ -1,0 +1,25 @@
+.ready__top{
+    padding-bottom: 60px;
+}
+.ready__bottom{
+    @include columns($width: 48%);
+    
+}
+.ready__item{
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+}
+.ready-item__img{
+    flex: 0 1 40%;
+    img{
+        object-fit: cover;
+        height: 220px;
+
+    }
+}
+.ready__info{
+    padding: 32px;
+}

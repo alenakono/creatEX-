@@ -1,7 +1,4 @@
-.why{
-    padding: 180px 0 0 0;
 
-}
 
 .why-block{
     display: flex;
@@ -22,6 +19,9 @@
     @include font(1.6rem, 400, 160%);
     color: $color-grey;
     margin-bottom: 12px;
+    list-style-type: none;
+    background: url(../../images/icons/list_why.svg) no-repeat left;
+    padding-left: 30px;
 }
 .why__button{
     margin-top: 48px;

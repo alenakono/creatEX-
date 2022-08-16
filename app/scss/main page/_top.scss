@@ -30,7 +30,12 @@
 .top__number{
     display: flex;
     align-items: center;
-    @include font(1.6rem, 400, 160%)
+    @include font(1.6rem, 400, 160%);
+}
+.top__number:not(:first-child){
+    list-style-type: none;
+    background: url(../../images/icons/list_ellipse.svg) no-repeat left;
+    padding-left: 30px;
 }
 .top__number_bold{
     margin-right: 12px;
