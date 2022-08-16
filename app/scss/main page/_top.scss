@@ -1,0 +1,42 @@
+.top{
+    padding: 120px 0 80px 0;
+}
+.top-layout{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 190px;
+}
+.top__play{
+    display: flex;
+    align-items: center;
+    span{
+        @include font(1.4rem, 700, 150%);
+        margin-left: 16px;
+    }
+    margin-bottom: 40px;
+}
+.top__title{
+    @include font(6.4rem, 900, 130%);
+    max-width: 500px;
+    margin-bottom: 60px;
+}
+.top__button:not(:last-child){
+    margin-right: 24px;
+}
+.top__numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.top__number{
+    display: flex;
+    align-items: center;
+    @include font(1.6rem, 400, 160%)
+}
+.top__number_bold{
+    margin-right: 12px;
+    @include font(4.6rem, 900, 130%);
+}
+.top__number:not(:first-child){
+    list-style-image: url(../../images/icons/list_ellipse.svg);
+    padding-left: 66px;
+}

@@ -1,0 +1,19 @@
+%transition{
+    transition: all 0.5s ease-in-out;
+}
+%hover__button_colored{
+    background-color: $color-brand;
+    cursor: pointer;
+}
+
+
+.button_colored {
+    @extend %transition;
+    &:hover{
+        @extend %hover__button_colored;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.24);
+
+    }
+}
+
+

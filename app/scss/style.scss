@@ -1,0 +1,105 @@
+@import "./fonts";
+@import "./null";
+@import "./const";
+@import "./mixins";
+@import "./placeholder";
+
+@import "./header";
+@import "./main page/top";
+@import "./main page/why";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Lato", "Verdana", sans-serif;
+    line-height: 130%;
+    color: $color-text;
+}
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: $content-width;
+    margin: 0 auto;
+    @include media-laptop{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.text_colored{
+    color: $color-brand;
+}
+.text_italic{
+    font-style: italic;
+}
+.button_colored{
+    padding: 20px 40px;
+    background-color: $color-brand;
+    color: $color-white;
+    border-radius: 4px;
+    @include font(1.6rem, 700, 160%);
+    @include media-laptop{
+        font-size: 2rem;
+    }
+}
+.button_invisible{
+    padding: 20px 40px;
+    border-radius: 4px;
+    @include font(1.6rem, 700, 160%);
+    @include media-laptop{
+        font-size: 2rem;
+    }
+    img{
+        margin-right: 10px;
+    }
+}
+.button_bordered{
+    padding: 20px 40px;
+    border-radius: 4px;
+    border: 1px solid $color-brand;
+    @include font(1.6rem, 700, 160%);
+    @include media-laptop{
+        font-size: 2rem;
+    }
+    img{
+        margin-right: 10px;
+    }
+}
+.href_colored{
+    color: $color-brand;
+}
+.title{
+    @include font(4.6rem, 900, 130%);
+    color: $color-text;
+    @include media-laptop{
+    }
+    @include media-big-mobile{
+    }
+}
+.background-block{
+    background-image: linear-gradient(55.95deg, rgb(255 63 58 / 29%) 0%, #f75e0596 100%);
+    position: relative;
+}
+h6{
+    @include font(1.6rem, 700, 150%);
+}
+h2{
+    @include font(4.6rem, 900, 130%);
+}
+
+

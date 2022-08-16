@@ -1,0 +1,28 @@
+.why{
+    padding: 180px 0 0 0;
+
+}
+
+.why-block{
+    display: flex;
+    justify-content: space-between;
+}
+.why__info{
+    margin-left: 135px;
+}
+.why__minititle{
+    margin-bottom: 8px;
+    max-width: 250px;
+}
+.why__title{
+    max-width: 390px;
+    margin-bottom: 40px;
+}
+.why__item{
+    @include font(1.6rem, 400, 160%);
+    color: $color-grey;
+    margin-bottom: 12px;
+}
+.why__button{
+    margin-top: 48px;
+}

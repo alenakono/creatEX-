@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    padding: 36px 0;
+    align-items: center;
+    justify-content: space-between;
+    @include font(1.6rem, 700, 160%);
+}
+.header__column{
+    display: flex;
+}
+.header__menu{
+    display: flex;
+    padding: 0 60px;
+}
+.header__item:not(:last-child){
+    margin-right: 40px;
+}
+.header__button:not(:last-child) {
+    margin-right: 35px;
+}
