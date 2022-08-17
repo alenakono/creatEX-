@@ -1,0 +1,73 @@
+
+.team{
+    padding: 166px 0 0px 0;
+    background-color: #F4F5F6;
+    margin-top: -50px;
+}
+.team__container{
+    position: relative;
+}
+.team__title{
+    margin-bottom: 60px;
+}
+.team-block{
+    @include columns($width: 20%);
+    min-width: 0;
+    overflow: hidden;
+    
+}
+.team-item{
+    cursor: pointer;
+    
+}
+.team-item__img{
+    position: relative;
+    background-color: #FFCF2D;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    padding: 20px 10px 0 10px;
+    margin-bottom: 16px;
+    img{
+        z-index: 1;
+        margin-bottom: -5px;
+    }
+    &:hover{
+        z-index: 3;
+        background-image: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.768225) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+        .team-item__social{
+            opacity: 1;
+        }
+    }
+}
+
+.team-item__social{
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    display: flex;
+    z-index: 5;
+    opacity: 0.5;
+}
+.team-item__sociallink{
+    margin-left: 15px;
+}
+.team-item__text{
+    color: $color-grey-light;
+}
+.team-item__title{
+    @include font(2rem, 700, 150%);
+    margin-bottom: 4px;
+    color: $color-grey
+}
+.team-swiper__prev, .team-swiper__next{
+    position: absolute;
+    top: 5%;
+}
+.team-swiper__prev{
+    right: 5%;
+}
+.team-swiper__next{
+    right: 0%;
+    
+}

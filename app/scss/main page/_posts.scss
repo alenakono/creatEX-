@@ -1,0 +1,85 @@
+.posts{
+    padding-top: 120px;
+    padding-bottom: 180px;
+}
+.posts-top{
+    padding-bottom: 60px;
+}
+.posts-layout{
+    @include columns($width:30%);
+}
+.posts-item__img{
+    position: relative;
+    margin-bottom: 16px;
+    img{
+        max-width: 100%;
+    }
+}
+.posts-item__category{
+    position: absolute;
+    top:5%;
+    left: 5%;
+}
+.posts-item__category {
+    @include font( 1.4rem, 400, 150%);
+    padding: 1px 8px 1px 28px;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    border-radius: 4px;
+    background-color: $color-white;
+    &._podcast{
+        background-image: url(../../images/icons/podcast.svg);
+
+    }
+    &._video{
+        background-image: url(../../images/icons/video.svg);
+
+    }
+    &._article{
+        background-image: url(../../images/icons/article.svg);
+
+    }
+}
+.posts-item__about{
+    display: flex;
+    color: $color-grey-light;
+    margin-bottom: 8px;
+}
+.posts-item__occupation{
+    @include font(1.4rem, 700, 150%);
+    margin-right: 12px;
+}
+.posts-item__date{
+    background-image: url(../../images/icons/date.svg);
+    background-repeat: no-repeat;
+    background-position: 10%;
+    @include font(1.4rem, 400, 150%);
+    padding: 0 12px 0 36px;
+    border-left: 1 px solid $color-grey-light;
+
+}
+.posts-item__time{
+    background-image: url(../../images/icons/time.svg);
+    background-repeat: no-repeat;
+    background-position: 10%;
+    @include font(1.4rem, 400, 150%);
+    padding: 0 12px 0 36px;
+    border-left: 1 px solid $color-grey-light;
+
+}
+.posts-item__title{
+    @include font(2rem, 700, 150%);
+    margin-bottom: 8px;
+}
+.posts-item__text{
+    @include font( 1.6rem, 400, 160%);
+    color: $color-grey;
+    margin-bottom: 16px;
+}
+.posts-item__button{
+    font-weight: 700;
+    padding-right: 35px;
+    background-image: url(../../images/icons/Line\ \(Stroke\).svg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+}

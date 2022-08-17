@@ -1,0 +1,17 @@
+.certificate{
+    padding-top: 120px;
+    @include columns($width: 48%);
+}
+.certificate-info{
+    max-width: 392px;
+    margin-right: 110px;
+}
+.certificate__title{
+    margin-bottom: 48px;
+}
+.certificate__logotips{
+    display: flex;
+}
+.certificate__media{
+    z-index: 10;
+}

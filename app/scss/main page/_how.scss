@@ -1,11 +1,8 @@
 .how{
     padding-bottom: 140px;
 }
-.how__minititle{
-    text-align: center;
-}
+
 .how__title{
-    text-align: center;
     margin-bottom: 70px;
 }
 .how__button{
@@ -48,8 +45,4 @@
 }
 .how-block__title{
     margin-bottom: 24px;
-}
-.how-block__text{
-    @include font(1.6rem, 400, 160%);
-    color: $color-grey;
 }
