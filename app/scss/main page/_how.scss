@@ -5,6 +5,10 @@
 .how__title{
     margin-bottom: 70px;
 }
+.how__buttons{
+    display: flex;
+    justify-content: space-between;
+}
 .how__button{
     display: inline-flex;
     align-items: center;
@@ -23,6 +27,8 @@
         svg path{
             fill: #FF3F3A;
         }
+        border: 1px solid $color-brand;
+        color: $color-brand;
 
     }
 }
@@ -45,4 +51,9 @@
 }
 .how-block__title{
     margin-bottom: 24px;
+}
+.how-block__img{
+    img{
+        max-width: 100%;
+    }
 }

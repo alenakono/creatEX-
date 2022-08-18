@@ -6,6 +6,7 @@
 @import "./layout";
 
 @import "./header";
+@import "./footer";
 @import "./main page/top";
 @import "./main page/why";
 @import "./main page/ready";
@@ -15,6 +16,7 @@
 @import "./main page/team";
 @import "./main page/review";
 @import "./main page/posts";
+@import "./main page/subscribe";
 
 
 
@@ -32,6 +34,9 @@ body{
     font-family: "Lato", "Verdana", sans-serif;
     line-height: 130%;
     color: $color-text;
+    &._lock{
+        overflow: hidden;
+    }
 }
 .wrapper{
     overflow: hidden;
@@ -51,6 +56,9 @@ body{
 }
 .block{
     padding-top: 180px;
+    @include media-tablet{
+        padding-top: 100px;
+    }
 }
 
 .text_colored{
@@ -66,7 +74,7 @@ body{
     margin-right: auto;
 }
 .button_colored{
-    padding: 20px 40px;
+    padding: 12px 40px;
     background-color: $color-brand;
     color: $color-white;
     border-radius: 4px;
@@ -76,7 +84,7 @@ body{
     }
 }
 .button_invisible{
-    padding: 20px 40px;
+    padding: 12px 40px;
     border-radius: 4px;
     @include font(1.6rem, 700, 160%);
     @include media-laptop{
@@ -87,7 +95,7 @@ body{
     }
 }
 .button_bordered{
-    padding: 20px 40px;
+    padding: 12px 40px;
     border-radius: 4px;
     border: 1px solid $color-brand;
     color: $color-brand;

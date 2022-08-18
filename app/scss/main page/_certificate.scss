@@ -14,4 +14,7 @@
 }
 .certificate__media{
     z-index: 10;
+    img{
+        max-width: 100%;
+    }
 }

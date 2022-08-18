@@ -28,9 +28,11 @@
     transition: all 1s ease-in-out;
     padding: 20px 10px 0 10px;
     margin-bottom: 16px;
+
     img{
         z-index: 1;
         margin-bottom: -5px;
+        max-width: 100%;
     }
     &:hover{
         z-index: 3;

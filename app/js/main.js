@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $(".menu__mob").on("click", function (event) {
-        $(".menu__mob, .header-bottom, .header-mob_top").toggleClass("_active");
+    $(".header__menu_mob").on("click", function (event) {
+        $(".header__menu_mob, .header-nav_mob").toggleClass("_active");
         $("body").toggleClass("_lock");
     });
 });
@@ -11,7 +11,18 @@ const swiperTeam = new Swiper('.team-swiper', {
       prevEl: '.team-swiper__prev',
     },
     slidesPerView: 4,
-    spaceBetween: 30,
+  spaceBetween: 30,
+  breakpoints: {
+    1230: {
+      slidesPerView: 4,
+    },
+    900: {
+      slidesPerView: 2,
+    },
+    300: {
+      slidesPerView: 1,
+    },
+  }
 });
 const swiperReview = new Swiper('.review-swiper', {
     loop: true,
@@ -23,5 +34,5 @@ const swiperReview = new Swiper('.review-swiper', {
       nextEl: '.review-swiper__next',
       prevEl: '.review-swiper__prev',
     },
-    
+  
 });

@@ -7,9 +7,17 @@
     cursor: pointer;
     color: $color-white;
 }
+.button_colored{
+    @extend %transition;
+    &:hover{
+        background-color: #ffffff07;
+        border: 1px solid $color-brand;
+        color: $color-text;
 
+    }
+}
 
-.lectures-item__button{
+.lectures-item__button, .button_bordered{
     @extend %transition;
     &:hover{
         @extend %hover__button_colored;
@@ -28,7 +36,12 @@
         background-color: $color-brand;
     }
 }
-
+.footer__sociallink{
+    @extend %transition;
+    &:hover{
+        opacity: 1;
+    }
+}
 
 
 

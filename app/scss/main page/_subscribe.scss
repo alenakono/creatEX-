@@ -1,0 +1,38 @@
+.subscribe{
+    padding: 120px 0 180px;
+    position: relative;
+}
+.subscribe__title{
+    max-width: 810px;
+    margin-bottom: 60px;
+}
+.subscribe__bg{
+    position: absolute;
+    bottom: -1%;
+    max-width: 354px;
+    
+    img{
+        width: 100%;
+    }
+    &._right{
+        right: 0;
+    }
+    &._left{
+        left:0;
+    }
+}
+.subscribe__form{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.subscribe__input{
+    padding: 13px 16px;
+    min-width: 422px;
+    margin-right: 24px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    color: #9A9CA5;
+    height: 52px;
+}
+

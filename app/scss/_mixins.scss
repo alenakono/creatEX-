@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include media-laptop{
+        justify-content: center;
+    }
     >*{
         flex:0 1 $width;
         @include media-laptop{
