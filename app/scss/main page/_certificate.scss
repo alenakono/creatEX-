@@ -1,20 +1,43 @@
 .certificate{
     padding-top: 120px;
     @include columns($width: 48%);
+    @include media-tablet{
+        display: block;
+    }
 }
 .certificate-info{
     max-width: 392px;
     margin-right: 110px;
+    @include media-tablet{
+        text-align: center;
+        margin: 0 auto;
+        
+    }
 }
 .certificate__title{
     margin-bottom: 48px;
+    @include media-tablet{
+        text-align: center;
+        
+    }
+    
 }
+
 .certificate__logotips{
     display: flex;
 }
 .certificate__media{
     z-index: 10;
+    @include media-tablet{
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+    }
     img{
         max-width: 100%;
+        @include media-tablet{
+            width: 70%;
+        }
     }
+    
 }

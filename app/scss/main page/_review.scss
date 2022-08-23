@@ -24,6 +24,9 @@
     display: flex;
     align-items: flex-start;
     max-width: 1020px;
+    @include media-tablet{
+        padding: 60px 25px;
+    }
     
     
 }

@@ -8,6 +8,10 @@
 .how__buttons{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @include media-tablet{
+        justify-content: center;
+    }
 }
 .how__button{
     display: inline-flex;
@@ -20,6 +24,10 @@
     svg{
         margin-right: 9px;
     }
+    @include media-tablet{
+        padding: 10px 20px;
+
+    }
 }
 .how__button{
     @extend %transition;
@@ -31,6 +39,7 @@
         color: $color-brand;
 
     }
+    
 }
 .how__button._active{
     border: 1px solid $color-brand;
@@ -45,9 +54,17 @@
     align-items: center;
     justify-content: space-around;
     padding-top: 70px;
+    @include media-tablet{
+        display: block;
+    }
 }
 .how-block__info{
     max-width: 495px;
+    @include media-tablet{
+        width: 100%;
+        text-align: center;
+        max-width: 100%;
+    }
 }
 .how-block__title{
     margin-bottom: 24px;
@@ -55,5 +72,8 @@
 .how-block__img{
     img{
         max-width: 100%;
+    }
+    @include media-tablet{
+        width: 100%;
     }
 }

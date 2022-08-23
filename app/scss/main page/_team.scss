@@ -3,12 +3,23 @@
     padding: 166px 0 0px 0;
     background-color: #F4F5F6;
     margin-top: -50px;
+    @include media-tablet{
+        padding: 70px 0 0 0;
+    }
 }
 .team__container{
     position: relative;
 }
 .team__title{
     margin-bottom: 60px;
+    @include media-tablet{
+        text-align: center;
+    }
+}
+.team__minititle{
+    @include media-tablet{
+        text-align: center;
+    }
 }
 .team-block{
     @include columns($width: 20%);
@@ -65,11 +76,17 @@
 .team-swiper__prev, .team-swiper__next{
     position: absolute;
     top: 5%;
+    @include media-tablet{
+        top: 100%;
+    }
 }
 .team-swiper__prev{
     right: 5%;
+    @include media-tablet{
+        right: 50%;
+    }
 }
 .team-swiper__next{
-    right: 0%;
+    right: 40%;
     
 }

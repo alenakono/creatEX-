@@ -1,6 +1,9 @@
 .subscribe{
     padding: 120px 0 180px;
     position: relative;
+    @include media-tablet{
+        padding: 100px 0;
+    }
 }
 .subscribe__title{
     max-width: 810px;
@@ -10,9 +13,13 @@
     position: absolute;
     bottom: -1%;
     max-width: 354px;
+    @include media-tablet{
+        display: none;
+    }
     
     img{
         width: 100%;
+        
     }
     &._right{
         right: 0;
@@ -34,5 +41,9 @@
     border-radius: 4px;
     color: #9A9CA5;
     height: 52px;
+    @include media-tablet{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 

@@ -13,6 +13,10 @@
     width: 100%;
     display: flex;
     background-color: $color-white;
+    @include media-tablet{
+        padding: 30px 20px;
+        display: block;
+    }
 }
 .lectures-item:not(:last-child){
     margin-bottom: 24px;
@@ -21,6 +25,10 @@
     display: flex;
     margin-right: 42px;
     flex: 0 1 20%;
+    @include media-tablet{
+        width: 100%;
+        justify-content: center;
+    }
 }
 .lectures-item__day{
     @include font(4.8rem, 900, 130%);
@@ -40,6 +48,13 @@
 .lectures-item__info{
     flex: 0 1 60%;
     margin-right: 40px;
+    @include media-tablet{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
+    }
 }
 .lectures-item__name{
     @include font(2rem, 700, 150%);
@@ -58,13 +73,26 @@
     color: $color-brand;
     border-radius: 4px;
     border: 1px solid $color-brand;
+    @include media-tablet{
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
 .lectures__buttons{
     margin-top: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media-tablet{
+        display: block;
+        text-align: center;
+    }
 }
 .lectures_button{
     margin-left: 40px;
+    @include media-tablet{
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }

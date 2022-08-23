@@ -1,93 +1,123 @@
-.top{
+.top {
     padding: 120px 0 80px 0;
-    @include media-tablet{
-        padding: 40px 0 40px 0;
+
+    @include media-tablet {
+        padding: 0px 0 40px 0;
     }
 }
-.top-layout{
+
+.top-layout {
     display: flex;
     justify-content: space-between;
     margin-bottom: 190px;
-    @include media-tablet{
+
+    @include media-tablet {
         display: block;
     }
 }
-.top__play{
+
+.top__play {
     display: flex;
     align-items: center;
-    span{
+
+    span {
         @include font(1.4rem, 700, 150%);
         margin-left: 16px;
     }
+
     margin-bottom: 40px;
 }
-.top__title{
+
+.top__title {
     @include font(6.4rem, 900, 130%);
     max-width: 500px;
     margin-bottom: 60px;
-    @include media-tablet{
+
+    @include media-tablet {
         font-size: 4rem;
         max-width: 100%;
         text-align: center;
     }
 }
-.top__buttons{
-    @include media-tablet{
+
+.top__buttons {
+    @include media-tablet {
         display: flex;
         justify-content: center;
     }
 }
-.top__button:not(:last-child){
+
+.top__button:not(:last-child) {
     margin-right: 24px;
 }
-.top__numbers{
+
+.top__numbers {
     display: flex;
     justify-content: space-between;
-    
-    @include media-tablet{
+
+    @include media-tablet {
         flex-direction: column;
         justify-content: center;
         margin-top: -180px;
         background-color: #fff;
-        border-radius:20px;
+        border-radius: 20px;
         z-index: 10;
+        padding: 20px 10px;
     }
 }
-.top__number{
+
+.top__number {
     display: flex;
     align-items: center;
     @include font(1.6rem, 400, 160%);
-    @include media-tablet{
+
+    @include media-tablet {
         margin: 0 auto;
     }
-    
-    
+
+
 }
-.top__number:not(:first-child){
+@include media-tablet{
+    .top__number{
+        list-style-type: none;
+        background: url(../../images/icons/list_ellipse.svg) no-repeat left;
+        padding-left: 20px;
+    }
+}
+.top__number:not(:first-child) {
     list-style-type: none;
     background: url(../../images/icons/list_ellipse.svg) no-repeat left;
     padding-left: 30px;
-    @include media-tablet{
-        padding-left: 0;
+
+    @include media-tablet {
+        padding-left: 20px;
     }
 }
-.top__number_bold{
+
+.top__number_bold {
     margin-right: 12px;
     @include font(4.6rem, 900, 130%);
+    @include media-tablet{
+        font-size: 3rem;
+    }
 }
-.top__number:not(:first-child){
+
+.top__number:not(:first-child) {
     list-style-image: url(../../images/icons/list_ellipse.svg);
     padding-left: 66px;
-    @include media-tablet{
+
+    @include media-tablet {
         padding-left: 15px;
     }
 }
-.top__media{
-    
-    img{
+
+.top__media {
+
+    img {
         max-width: 100%;
         min-width: 50%;
-        @include media-tablet{
+
+        @include media-tablet {
             text-align: center;
         }
     }

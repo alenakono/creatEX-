@@ -2,4 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    @include media-tablet{
+        display: block;
+    }
+}
+@include media-tablet{
+    .title-layout__column{
+        margin-top: 20px;
+    }
 }

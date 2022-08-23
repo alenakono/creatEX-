@@ -7,9 +7,13 @@
 }
 .posts-layout{
     @include columns($width:30%);
+    @include media-tablet{
+        display: block;
+    }
 }
 .posts-item{
     margin-bottom: 30px;
+    
 }
 .posts-item__img{
     position: relative;

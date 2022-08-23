@@ -3,23 +3,46 @@
 }
 .ready__bottom{
     @include columns($width: 48%);
+    @media (max-width: 500px){
+        display: block;
+    }
     
 }
 .ready__item{
-    overflow: hidden;
     margin-bottom: 30px;
     display: flex;
-    align-items: center;
+    
+    @include media-laptop{
+        display: block;
+        flex: 0 1 20%;
+        margin-right: 20px;
+
+    }
+    @media (max-width: 500px) {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
 
 }
 .ready-item__img{
     flex: 0 1 40%;
     img{
         object-fit: cover;
-        height: 220px;
+        height: 100%;
 
+    }
+    @media (max-width: 500px) {
+        img{
+            width: 100px;
+            border-radius: 50px;
+        }
+        flex: 0 1 auto;
     }
 }
 .ready__info{
     padding: 32px;
+    @media (max-width: 500px){
+        padding: 0 0 0 10px;
+    }
 }

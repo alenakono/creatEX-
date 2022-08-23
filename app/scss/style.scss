@@ -121,6 +121,9 @@ body{
 .text{
     @include font(1.6rem, 400, 160%);
     color: $color-grey;
+    @include media-tablet{
+        font-size: 2rem;
+    }
 }
 .background-block{
     background-image: linear-gradient(55.95deg, rgb(255 63 58 / 27%) 0%, rgb(247 94 5 / 27%) 100%);
