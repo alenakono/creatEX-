@@ -41,3 +41,15 @@ $(document).ready(function () {
       $(this.nextElementSibling).toggleClass("_active");
   });
 });
+$(document).ready(function () {
+  $(".eventsLectures-nav__type_tile").on("click", function (event) {
+    $(".eventsLectures-nav__type").removeClass("_active");
+    $(this).toggleClass("_active");
+    $(".eventsLectures-block").toggleClass("_tile");
+  });
+  $(".eventsLectures-nav__type_list").on("click", function (event) {
+    $(".eventsLectures-nav__type").removeClass("_active");
+    $(this).toggleClass("_active");
+    $(".eventsLectures-block").removeClass("_tile");
+  });
+});

@@ -19,6 +19,7 @@
 @import "./main page/posts";
 @import "./main page/subscribe";
 @import "./course page/courseOnline";
+@import "./events/eventsLecture";
 
 
 
@@ -182,7 +183,6 @@ h6{
     border-radius: 4px;
     @include font(1.2rem, 400, 150%);
     width: 100%;
-    color: $color-white;
     outline: none;
 }
 .search-form{
