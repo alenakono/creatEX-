@@ -4,6 +4,7 @@
 @import "./mixins";
 @import "./placeholder";
 @import "./layout";
+@import "./global";
 
 @import "./header";
 @import "./footer";
@@ -17,6 +18,7 @@
 @import "./main page/review";
 @import "./main page/posts";
 @import "./main page/subscribe";
+@import "./course page/courseOnline";
 
 
 
@@ -25,35 +27,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    font-size: 10px;
-}
-body{
-    font-size: 1.6rem;
-    font-weight: 400;
-    font-family: "Lato", "Verdana", sans-serif;
-    line-height: 130%;
-    color: $color-text;
-    &._lock{
-        overflow: hidden;
-    }
-}
-.wrapper{
-    overflow: hidden;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    
-}
 
-.container{
-    max-width: $content-width;
-    margin: 0 auto;
-    @include media-laptop{
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
 .block{
     padding-top: 180px;
     @include media-tablet{
@@ -202,4 +176,25 @@ h6{
 .swiper__next{
     background-color: $color-brand;
 }
+.search-form__input{
+    padding: 9px 12px;
+    border-right: none;
+    border-radius: 4px;
+    @include font(1.2rem, 400, 150%);
+    width: 100%;
+    color: $color-white;
+    outline: none;
+}
+.search-form{
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+}
+.search-form__button{
+    padding: 9px 12px;
+    border-left: none;
+    margin-left: -2px;
+    border-radius: 4px;
+}
+
 

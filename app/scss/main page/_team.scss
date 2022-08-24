@@ -87,6 +87,9 @@
     }
 }
 .team-swiper__next{
-    right: 40%;
+    right: 0;
+    @include media-tablet{
+        right: 40%;
+    }
     
 }

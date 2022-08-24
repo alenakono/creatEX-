@@ -48,6 +48,9 @@
 .header-nav_mob{
     display: none;
 }
+.header__item._active{
+    color: $color-brand;
+}
 //mob menu header
 @include media-tablet{
     .header__menu_mob{

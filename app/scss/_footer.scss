@@ -13,6 +13,9 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 18px 0;
+    @include media-tablet{
+        display: block;
+    }
 }
 .footer__column._layout{
     display: flex;
@@ -48,6 +51,10 @@ footer{
     color: $color-white;
     padding-bottom: 12px;
     font-weight: 700;
+    @include media-tablet{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
 }
 .footer-dropdown__link{
     padding-bottom: 8px;
@@ -86,4 +93,15 @@ footer{
 }
 .footer-dropdown:not(:last-child){
     margin-right: 60px;
+}
+@include media-tablet{
+    .footer__column._layout{
+        display: block;
+    }
+    .footer-dropdown__menu {
+        display: none;
+        &._active{
+            display: block;
+        }
+    }
 }

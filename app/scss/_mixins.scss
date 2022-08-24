@@ -3,7 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     @include media-laptop{
-        justify-content: center;
+        justify-content: space-around;
     }
     >*{
         flex:0 1 $width;

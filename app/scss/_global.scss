@@ -1,0 +1,35 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Lato", "Verdana", sans-serif;
+    line-height: 130%;
+    color: $color-text;
+    &._lock{
+        overflow: hidden;
+    }
+}
+.wrapper{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container{
+    max-width: $content-width;
+    margin: 0 auto;
+    @include media-laptop{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+main{
+    flex: 1 0 auto;
+}
+footer{
+    flex: 0 0 auto;
+}

@@ -36,3 +36,8 @@ const swiperReview = new Swiper('.review-swiper', {
     },
   
 });
+$(document).ready(function () {
+  $(".footer-dropdown__title").on("click", function (event){
+      $(this.nextElementSibling).toggleClass("_active");
+  });
+});
