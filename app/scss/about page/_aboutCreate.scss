@@ -1,0 +1,33 @@
+.aboutCreate{
+    padding-top: 80px;
+}
+.aboutCreate-block{
+    @include columns ($width: 45%);
+    align-items: center;
+}
+.aboutCreate__title, .aboutCreate__minititle{
+    max-width: 600px;
+}
+.aboutCreate__title{
+    padding-bottom: 48px;
+}
+.aboutCreate__info{
+    
+    max-width: 600px;
+}
+.aboutCreate__text{
+    @include font(1.6rem, 400, 160%);
+
+}
+.aboutCreate__text:not(:last-child){
+    margin-bottom: 24px;
+}
+.aboutCreate__buttons{
+    padding-top: 60px;
+}
+.aboutCreate__button:not(:last-child){
+    margin-right: 24px;
+}
+.aboutCreate__text_big{
+    font-size: 2rem;
+}

@@ -19,8 +19,11 @@
 @import "./main page/posts";
 @import "./main page/subscribe";
 @import "./course page/courseOnline";
-@import "./events/eventsLecture";
-
+@import "./events page/eventsLecture";
+@import "./about page/aboutCreate";
+@import "./about page/aboutData";
+@import "./about page/aboutValues";
+@import "./about page/aboutDirections";
 
 
 *{
@@ -118,7 +121,10 @@ h6{
 }
 .minititle{
     padding-bottom: 8px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
+}
+._bold{
+    font-weight: 700;
 }
 
 .course-item{
@@ -127,26 +133,29 @@ h6{
     border-radius: 4px;
     cursor: pointer;
 }
-.course-item_field {
+.course-item__field {
     @include font(1.4rem, 400, 150%);
     color: $color-white;
     padding: 1px 8px;
     border-radius: 4px;
     display: inline-block;
-    &._green{
+    &._marketing{
         background-color: #03CEA4;
     }
-    &._orange{
+    &._hr{
         background-color: #F89828;
     }
-    &._blue{
+    &._management{
         background-color: #5A87FC;
     }
-    &._red{
+    &._design{
         background-color: #F52F6E;
     }
+    &._development{
+        background-color: #7772F1;
+    }
 }
-.course-item_occupation{
+.course-item__occupation{
     @include font(2rem, 700, 150%);
     padding: 20px 0;
 }

@@ -1,0 +1,24 @@
+.aboutValues-layout{
+    padding-top: 60px;
+    @include columns($width: 25%);
+}
+.aboutValues__minititle,
+.aboutValues__title{
+    max-width: 500px;
+}
+.aboutValues-item{
+    text-align: center;
+    padding: 0 45px;
+}
+.aboutValues__item:not(:first-child){
+    border-left: 1px solid #DADBDD;
+}
+.aboutValues-item__title{
+    @include font(2rem, 700, 150%);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.aboutValues-item__text{
+    color: $color-grey-light;
+    @include font(1.6rem, 400, 160%);
+}
