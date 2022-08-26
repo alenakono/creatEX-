@@ -11,3 +11,16 @@
         margin-top: 20px;
     }
 }
+.aboutTeam-block{
+    @include columns($width: 22%);
+    @include media-tablet{
+        @include columns($width: 33%);
+        margin: 0 -15px;
+    }
+    .team-item{
+        margin-bottom: 60px;
+    }
+    @media (max-width: 450px) {
+        @include columns($width: 40%);
+    }
+}

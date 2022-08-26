@@ -2,6 +2,9 @@
 .aboutData-block{
     @include columns($width:45%);
     align-items: center;
+    @include media-tablet{
+        text-align: center;
+    }
 }
 .aboutData__number{
     @include font(1.8rem, 700, 150%);

@@ -1,0 +1,19 @@
+.aboutJobs{
+background-color: #F4F5F6;
+}
+.aboutJobs-layout{
+    @include columns ($width:15%);
+    padding-top: 32px;
+    padding-bottom: 72px;
+    @include media-tablet{
+        @include columns ($width:25%);
+    }
+}
+.aboutJobs__item{
+    img{
+        width: 100%;
+    }
+    @include media-tablet{
+        margin-top: -20px;
+    }
+}
