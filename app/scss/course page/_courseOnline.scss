@@ -1,17 +1,27 @@
 .courseOnline{
     padding-top: 80px;
     padding-bottom: 120px;
+    @include media-tablet{
+        padding-top:40px;
+        padding-bottom: 40px;
+    }
 }
 .courseOnline__top{
     padding: 70px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media-tablet{
+        display: block;
+    }
 }
 .courseOnline-filter{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include media-tablet{
+        justify-content: center;
+    }
 }
 .courseOnline-filter__item{
     @include font(1.6rem, 700, 160%);
@@ -23,6 +33,13 @@
         color: $color-brand;
         border-radius: 4px;
         border: 1px solid $color-brand;
+    }
+    &._iconed{
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 9px;
+        }
     }
     
 }
@@ -44,6 +61,9 @@
 }
 .courseOnline-item__info{
     padding: 25px;
+    @include media-tablet{
+        padding: 15px;
+    }
 }
 .course__load{
     display: flex;

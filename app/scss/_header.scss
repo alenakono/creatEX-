@@ -11,6 +11,7 @@
     @include media-tablet{
         justify-content: space-between;
         align-items: flex-start;
+        padding: 15px;
     }
     position: relative;
     
@@ -19,7 +20,18 @@
     display: flex;
     @include media-laptop{
         margin-bottom: 15px;
+        
     }
+    &._mobile{
+        padding-left: 15px;
+    }
+    @media(max-width:420px){
+        &._mobile{
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    
 }
 .header-nav{
     @include media-tablet{
@@ -30,20 +42,33 @@
     display: flex;
     padding: 0 60px;
 }
+.header-logo{
+    padding-right: 15px;
+}
 .header__item:not(:last-child){
     margin-right: 40px;
     @include media-tablet{
         margin-right: 0;
     }
 }
-.header__button:not(:last-child) {
-    margin-right: 35px;
+.header-buttons{
+    @include media-tablet{
+        display: block;
+        width: 100%;
+    }
+}
+.header__button{
     @include media-tablet{
         display: block;
         margin-right: 0;
         margin-bottom: 15px;
     }
-    
+}
+.header__button:not(:last-child) {
+    margin-right: 35px;
+    @include media-tablet{
+        margin-right: 0;
+    }
 }
 .header-nav_mob{
     display: none;

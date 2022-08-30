@@ -26,6 +26,8 @@
 @import "./about page/aboutDirections";
 @import "./about page/_aboutProcess";
 @import "./about page/aboutJobs";
+@import "./blog page/blog";
+@import "./blog page/blogSubscribe";
 
 
 *{
@@ -62,6 +64,11 @@
     @include media-laptop{
         font-size: 2rem;
     }
+    @include media-tablet{
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
 }
 .button_invisible{
     padding: 12px 40px;
@@ -72,6 +79,11 @@
     }
     img{
         margin-right: 10px;
+    }
+    @include media-tablet{
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1.4rem;
     }
 }
 .button_bordered{
@@ -134,6 +146,14 @@ h6{
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
     cursor: pointer;
+    
+}
+.course-item__info{
+    @include media-tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 .course-item__field {
     @include font(1.4rem, 400, 150%);
@@ -160,6 +180,13 @@ h6{
 .course-item__occupation{
     @include font(2rem, 700, 150%);
     padding: 20px 0;
+    @include media-tablet{
+        font-size: 1,7rem;
+    }
+}
+.course-item__bottom{
+    display: flex;
+    align-items: center;
 }
 .course-item__price{
     @include font (1.8rem, 700, 150%);
@@ -200,12 +227,25 @@ h6{
     display: flex;
     border-radius: 4px;
     border: 1px solid #D7DADD;
+    height: 42px;
 }
 .search-form__button{
     padding: 9px 12px;
     border-left: none;
     margin-left: -2px;
     border-radius: 4px;
+}
+.numbering{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.numbering__item{
+    margin-right: 20px;
+    @include font(1.6rem, 700, 150%);
+    &._active{
+        color: $color-brand;
+    }
 }
 
 

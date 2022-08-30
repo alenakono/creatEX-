@@ -12,11 +12,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
+    @include media-tablet{
+        padding: 20px 0 0 0;
+        justify-content: center;
+    }
     
 }
 .eventsLectures-nav__list{
     display: flex;
     align-items: center;
+    @include media-tablet{
+        margin-bottom: 20px;
+    }
     
     @include font(1.6rem, 700, 160%);
     select{
@@ -25,7 +32,7 @@
         background-color: $color-white;
         padding: 11px 16px;
         height: 44px;
-        margin-left: 12px;
+        margin-left: 10px;
         @include font(1.4rem, 400, 150%);
         outline: none;
         option{
@@ -37,11 +44,7 @@
         @include font(1.4rem, 400, 150%);
     }
 }
-.eventsLectures__sort,
-.eventsLectures__select{
-    width: 160px;
-    
-}
+
 .eventsLectures-nav__view{
     .eventsLectures-nav__type{
         margin-left: 16px;
@@ -69,17 +72,5 @@
     .lectures-item__button{
         margin-top: 15px;
         width: 100%;
-    }
-}
-.eventsLectures-numbering{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-}
-.eventsLectures-numbering__item{
-    margin-right: 20px;
-    @include font(1.6rem, 700, 150%);
-    &._active{
-        color: $color-brand;
     }
 }
