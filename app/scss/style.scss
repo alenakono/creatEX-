@@ -28,7 +28,8 @@
 @import "./about page/aboutJobs";
 @import "./blog page/blog";
 @import "./blog page/blogSubscribe";
-
+@import "./contacts/contacts";
+@import "./contacts/contactsUser";
 
 *{
     margin: 0;
@@ -105,9 +106,8 @@
 .title{
     @include font(4.6rem, 900, 130%);
     color: $color-text;
-    @include media-laptop{
-    }
-    @include media-big-mobile{
+    @include media-tablet{
+        font-size: 3.2rem
     }
 }
 .text{

@@ -1,50 +1,63 @@
-.blogSubscribe{
-    background-color: #f4f5f7;;
+.blogSubscribe {
+    background-color: #f4f5f7;
+    ;
 }
-.blogSubscribe-block{
+
+.blogSubscribe-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.blogSubscribe__img{
+
+.blogSubscribe__img {
     max-width: 100%;
-    img{
+
+    img {
         width: 100%;
         min-width: 200px;
-        @include media-tablet{
+
+        @include media-tablet {
             display: none;
         }
 
     }
-    
+
 }
-.blogSubscribe__info{
+
+.blogSubscribe__info {
     max-width: 600px;
     margin-left: 50px;
-    @include media-tablet{
+
+    @include media-tablet {
         padding: 15px;
         margin-left: 0;
     }
 }
-.blogSubscribe__title{
+
+.blogSubscribe__title {
     margin-bottom: 48px;
     max-width: 600px;
+
     @include media-laptop {
         font-size: 3rem;
     }
-    @include media-tablet{
+
+    @include media-tablet {
         font-size: 2.2rem;
         margin-bottom: 20px;
     }
 }
-.blogSubscribe__form{
+
+.blogSubscribe__form {
     display: flex;
     margin-bottom: 24px;
-    @include media-tablet{
+
+    @include media-tablet {
         display: block;
     }
 }
-.blogSubscribe__input{
+
+.blogSubscribe__input {
     padding: 13px 16px;
     min-width: 422px;
     margin-right: 24px;
@@ -52,42 +65,46 @@
     border-radius: 4px;
     color: #9a9ca5;
     height: 52px;
-    @include media-laptop{
-        min-width: 100px;
-    }
-    @include media-tablet{
+
+    @include media-tablet {
         width: 100%;
         margin-bottom: 10px;
+        min-width: 100px;
     }
 }
-.blogSubscribe__button{
+
+.blogSubscribe__button {
     width: 100%;
 }
-.blogSubscribe-check{
+
+.blogSubscribe-check {
     @include font(1.6rem, 400, 150%);
     line-height: 2.6rem;
     padding-left: 25px;
 }
-.blogSubscribe-check__box{
+
+.blogSubscribe-check__box {
     position: absolute;
     width: 16px;
     height: 16px;
     background-color: $color-brand;
     border-radius: 4px;
     margin-left: -25px;
-    margin-top: 5px ;
+    margin-top: 5px;
     background-position: center;
     background-repeat: no-repeat;
 }
-.blogSubscribe-check__input{
+
+.blogSubscribe-check__input {
     position: absolute;
     width: 1px;
     height: 1px;
     overflow: hidden;
     clip: react(0 0 0 0);
 }
-.blogSubscribe-check__input:checked + .blogSubscribe-check__box{
+
+.blogSubscribe-check__input:checked+.blogSubscribe-check__box {
     background-image: url(../../images/icons/check.svg );
-    
-    
+
+
 }

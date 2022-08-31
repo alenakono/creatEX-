@@ -70,6 +70,15 @@
         color: $color-brand;
     }
 }
+.contacts-media__href{
+    @extend %transition;
+    &:hover{
+        svg path{
+            fill: $color-brand;
+        }
+    }
+    
+}
 
 
 
