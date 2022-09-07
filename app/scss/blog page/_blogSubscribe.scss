@@ -1,6 +1,6 @@
 .blogSubscribe {
     background-color: #f4f5f7;
-    ;
+
 }
 
 .blogSubscribe-block {
@@ -75,36 +75,4 @@
 
 .blogSubscribe__button {
     width: 100%;
-}
-
-.blogSubscribe-check {
-    @include font(1.6rem, 400, 150%);
-    line-height: 2.6rem;
-    padding-left: 25px;
-}
-
-.blogSubscribe-check__box {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: $color-brand;
-    border-radius: 4px;
-    margin-left: -25px;
-    margin-top: 5px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.blogSubscribe-check__input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: react(0 0 0 0);
-}
-
-.blogSubscribe-check__input:checked+.blogSubscribe-check__box {
-    background-image: url(../../images/icons/check.svg );
-
-
 }

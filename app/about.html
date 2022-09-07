@@ -30,9 +30,9 @@
         </div>
         <div class="header__column _mobile">
             <div class="header-buttons">
-                <a href="tel:" class="header__button button_colored">Get consultation</a>
-                <a href="mailto:" class="header__button button_invisible"><img src="./images/icons/user.svg"
-                        alt="User">Log in / Register</a>
+                <a href="#" class="header__button button_colored">Get consultation</a>
+                <button class="header__button button_invisible popup-login__open"><img src="./images/icons/user.svg"
+                        alt="User">Log in / Register</button>
             </div>
         </div>
         <nav class="header-nav_mob">
@@ -727,7 +727,7 @@
                         <div class="posts-layout"></div>
                     </div>
                     <div class="title-layout__column">
-                        <a href="" class="button button_colored posts__button">Go to blog</a>
+                        <a href="./blog.html" class="button button_colored posts__button">Go to blog</a>
                     </div>
                 </div>
                 <div class="posts-layout">
@@ -888,19 +888,19 @@
                             <p class="footer-dropdown__title _uppercase _minititle">SITE MAP</p>
                             <ul class="footer-dropdown__menu _active">
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">About Us</a>
+                                    <a href="./about.html" target="_blank">About Us</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Courses</a>
+                                    <a href="./course.html" target="_blank">Courses</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Events</a>
+                                    <a href="./events.html" target="_blank">Events</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Blog</a>
+                                    <a href="./blog.html" target="_blank">Blog</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Contacts</a>
+                                    <a href="./contacts.html" target="_blank">Contacts</a>
                                 </li>
                             </ul>
                         </div>
@@ -908,19 +908,19 @@
                             <p class="footer-dropdown__title _uppercase _minititle">COURSES</p>
                             <ul class="footer-dropdown__menu">
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Marketing</a>
+                                    <a href="./course.html" target="_blank">Marketing</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Management</a>
+                                    <a href="./course.html" target="_blank">Management</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">HR & Recruting</a>
+                                    <a href="./course.html" target="_blank">HR & Recruting</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Design</a>
+                                    <a href="./course.html" target="_blank">Design</a>
                                 </li>
                                 <li class="footer-dropdown__link">
-                                    <a href="" target="_blank">Development</a>
+                                    <a href="./course.html" target="_blank">Development</a>
                                 </li>
                             </ul>
                         </div>
@@ -961,8 +961,7 @@
                         <span class="footer-bottom__text">© All rights reserved.</span>
                         <span class="footer-bottom__text">Made with</span>
                         <span class="footer-bottom__text _iconed"><img src="./images/icons/heart.svg"
-                                alt="Heart icon">by
-                            Createx Studio </span>
+                                alt="Heart icon">by Createx Studio </span>
                     </div>
                     <div class="footer-bottom__column">
                         <a href="#top" class="_uppercase">GO TO TOP</a>
@@ -973,6 +972,173 @@
                 </div>
             </div>
         </footer>
+        <div class="popup popup-login" id="popup-login">
+            <div class="popup__container">
+                <div class="popup__body popup-login__body">
+                    <div class="popup__top">
+                        <h4 class="popup__title _centered">Sign in</h4>
+                        <p class="popup__text _centered">Sign in to your account using email and password provided
+                            during
+                            registration.</p>
+                        <form action="" class="popup__form">
+                            <div class="popup__form">
+                                <label class="form__text">E-mail</label>
+                                <input type="email" placeholder="Your working email">
+                            </div>
+                            <div class="popup__form">
+                                <label class="form__text">Password</label>
+                                <input type="password" placeholder="Your password">
+                            </div>
+                            <div class="popup__layout">
+                                <label class="check"><input type="checkbox" class="check__input" checked>
+                                    <span class="check__box"></span> Keep me signed in
+                                </label>
+                                <button class="popup__button_password">Forgot password?</button>
+                            </div>
+                            <button type="submit" class="popup__button_submit button_colored">Sign in</button>
+                        </form>
+                        <span>Don’t have an account?</span> <span class="text _colored popup-register__open"
+                            id="popup-register__open"> Sign Up</span>
+                    </div>
+                    <hr>
+                    <div class="popup__bottom">
+                        <p class="popup__text _centered">Or sign in with</p>
+                        <div class="popup-contacts-layout">
+                            <a href="#" class="contacts-media__href">
+                                <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5628 0.00457747L8.78558 0C5.66542 0 3.64903 2.12509 3.64903 5.41423V7.91055H0.85662C0.615322 7.91055 0.419922 8.1115 0.419922 8.35937V11.9763C0.419922 12.2241 0.615545 12.4249 0.85662 12.4249H3.64903V21.5514C3.64903 21.7993 3.84443 22 4.08573 22H7.72904C7.97033 22 8.16573 21.799 8.16573 21.5514V12.4249H11.4307C11.672 12.4249 11.8674 12.2241 11.8674 11.9763L11.8688 8.35937C11.8688 8.24036 11.8226 8.12638 11.7409 8.04215C11.6591 7.95793 11.5477 7.91055 11.4318 7.91055H8.16573V5.79439C8.16573 4.77728 8.40168 4.26094 9.6915 4.26094L11.5624 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.453169C11.9989 0.205757 11.8037 0.00503522 11.5628 0.00457747Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                            <a href="#" class="contacts-media__href">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.17562 7.75219H17.4051C17.4959 8.25921 17.5413 8.74352 17.5413 9.20513C17.5413 10.8472 17.197 12.3134 16.5084 13.6037C15.8198 14.8939 14.8379 15.9022 13.5628 16.6287C12.2877 17.3552 10.8253 17.7184 9.17562 17.7184C7.98754 17.7184 6.85622 17.4895 5.78165 17.0317C4.70708 16.5739 3.78008 15.9552 3.00064 15.1758C2.2212 14.3963 1.60257 13.4693 1.14475 12.3948C0.686921 11.3202 0.458008 10.1889 0.458008 9.00081C0.458008 7.81273 0.686921 6.68141 1.14475 5.60685C1.60257 4.53228 2.2212 3.60528 3.00064 2.82584C3.78008 2.0464 4.70708 1.42777 5.78165 0.969942C6.85622 0.512116 7.98754 0.283203 9.17562 0.283203C11.4458 0.283203 13.3944 1.04372 15.0214 2.56476L12.649 4.84633C11.7183 3.94581 10.5604 3.49555 9.17562 3.49555C8.19942 3.49555 7.29702 3.74149 6.46839 4.23337C5.63976 4.72525 4.98329 5.39307 4.49898 6.23683C4.01467 7.08059 3.77251 8.00192 3.77251 9.00081C3.77251 9.9997 4.01467 10.921 4.49898 11.7648C4.98329 12.6086 5.63976 13.2764 6.46839 13.7683C7.29702 14.2601 8.19942 14.5061 9.17562 14.5061C9.83398 14.5061 10.4394 14.4153 10.9918 14.2336C11.5442 14.052 11.9982 13.825 12.3539 13.5526C12.7096 13.2802 13.0198 12.9699 13.2847 12.6218C13.5496 12.2737 13.7444 11.9445 13.8693 11.6343C13.9941 11.324 14.0793 11.0289 14.1247 10.7489H9.17562V7.75219Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                            <a href="#" class="contacts-media__href">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                            <a href="https://www.linkedin.com" class="contacts-media__href">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.995 20L20 19.9992V12.6642C20 9.07583 19.2275 6.31167 15.0325 6.31167C13.0158 6.31167 11.6625 7.41833 11.11 8.4675H11.0517V6.64667H7.07416V19.9992H11.2158V13.3875C11.2158 11.6467 11.5458 9.96334 13.7017 9.96334C15.8258 9.96334 15.8575 11.95 15.8575 13.4992V20H19.995Z"
+                                        fill="#787A80" />
+                                    <path d="M0.329995 6.6475H4.47666V20H0.329995V6.6475Z" fill="#787A80" />
+                                    <path
+                                        d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <a href="##" class="popup__close popup-login__close">&#10006</ф>
+                </div>
+            </div>
+        </div>
+        <div class="popup popup-register" id="popup-register">
+            <div class="popup__container">
+                <div class="popup__body popup-login__body">
+                    <div class="popup__top">
+                        <h4 class="popup__title _centered">Sign up</h4>
+                        <p class="popup__text _centered">Registration takes less than a minute but gives you full
+                            control over your studying.</p>
+                        <form action="" class="popup__form">
+                            <div class="popup__form">
+                                <label class="form__text">Full Name</label>
+                                <input type="text" placeholder="Your full name">
+                            </div>
+                            <div class="popup__form">
+                                <label class="form__text">E-mail</label>
+                                <input type="email" placeholder="Your working email">
+                            </div>
+                            <div class="popup__form">
+                                <label class="form__text">Password</label>
+                                <input type="password" placeholder="Your password">
+                            </div>
+                            <div class="popup__form">
+                                <label class="form__text">Confirm Password</label>
+                                <input type="password" placeholder="Confirm password">
+                            </div>
+                            <div class="popup__layout">
+                                <label class="check"><input type="checkbox" class="check__input" checked>
+                                    <span class="check__box"></span> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="popup__button_submit button_colored">Sign up</button>
+                        </form>
+                        <span>Already have an account?</span> <span class="text _colored popup-login__open"
+                            id="popup-register__open"> Sign in</span>
+                    </div>
+                    <hr>
+                    <div class="popup__bottom">
+                        <p class="popup__text _centered">Or sign in with</p>
+                        <div class="popup-contacts-layout">
+                            <a href="#" class="contacts-media__href">
+                                <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5628 0.00457747L8.78558 0C5.66542 0 3.64903 2.12509 3.64903 5.41423V7.91055H0.85662C0.615322 7.91055 0.419922 8.1115 0.419922 8.35937V11.9763C0.419922 12.2241 0.615545 12.4249 0.85662 12.4249H3.64903V21.5514C3.64903 21.7993 3.84443 22 4.08573 22H7.72904C7.97033 22 8.16573 21.799 8.16573 21.5514V12.4249H11.4307C11.672 12.4249 11.8674 12.2241 11.8674 11.9763L11.8688 8.35937C11.8688 8.24036 11.8226 8.12638 11.7409 8.04215C11.6591 7.95793 11.5477 7.91055 11.4318 7.91055H8.16573V5.79439C8.16573 4.77728 8.40168 4.26094 9.6915 4.26094L11.5624 4.26025C11.8035 4.26025 11.9989 4.0593 11.9989 3.81166V0.453169C11.9989 0.205757 11.8037 0.00503522 11.5628 0.00457747Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                            <a href="#" class="contacts-media__href">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.17562 7.75219H17.4051C17.4959 8.25921 17.5413 8.74352 17.5413 9.20513C17.5413 10.8472 17.197 12.3134 16.5084 13.6037C15.8198 14.8939 14.8379 15.9022 13.5628 16.6287C12.2877 17.3552 10.8253 17.7184 9.17562 17.7184C7.98754 17.7184 6.85622 17.4895 5.78165 17.0317C4.70708 16.5739 3.78008 15.9552 3.00064 15.1758C2.2212 14.3963 1.60257 13.4693 1.14475 12.3948C0.686921 11.3202 0.458008 10.1889 0.458008 9.00081C0.458008 7.81273 0.686921 6.68141 1.14475 5.60685C1.60257 4.53228 2.2212 3.60528 3.00064 2.82584C3.78008 2.0464 4.70708 1.42777 5.78165 0.969942C6.85622 0.512116 7.98754 0.283203 9.17562 0.283203C11.4458 0.283203 13.3944 1.04372 15.0214 2.56476L12.649 4.84633C11.7183 3.94581 10.5604 3.49555 9.17562 3.49555C8.19942 3.49555 7.29702 3.74149 6.46839 4.23337C5.63976 4.72525 4.98329 5.39307 4.49898 6.23683C4.01467 7.08059 3.77251 8.00192 3.77251 9.00081C3.77251 9.9997 4.01467 10.921 4.49898 11.7648C4.98329 12.6086 5.63976 13.2764 6.46839 13.7683C7.29702 14.2601 8.19942 14.5061 9.17562 14.5061C9.83398 14.5061 10.4394 14.4153 10.9918 14.2336C11.5442 14.052 11.9982 13.825 12.3539 13.5526C12.7096 13.2802 13.0198 12.9699 13.2847 12.6218C13.5496 12.2737 13.7444 11.9445 13.8693 11.6343C13.9941 11.324 14.0793 11.0289 14.1247 10.7489H9.17562V7.75219Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                            <a href="#" class="contacts-media__href">
+                                <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5 2.77233C20.7271 3.10027 19.8978 3.32267 19.0264 3.42196C19.9161 2.91181 20.5972 2.10263 20.92 1.1414C20.0854 1.61383 19.1642 1.95688 18.1826 2.14285C17.3966 1.33994 16.2785 0.839844 15.0384 0.839844C12.6593 0.839844 10.7303 2.68691 10.7303 4.9637C10.7303 5.2866 10.7683 5.60199 10.8418 5.90357C7.26201 5.73141 4.08768 4.08917 1.96314 1.59372C1.59176 2.20189 1.38049 2.91053 1.38049 3.66697C1.38049 5.09814 2.14161 6.36093 3.2964 7.09973C2.5904 7.07713 1.92639 6.89116 1.34508 6.58205V6.63357C1.34508 8.63141 2.83056 10.2988 4.80024 10.6783C4.43936 10.7713 4.05882 10.8228 3.66514 10.8228C3.38696 10.8228 3.11794 10.7964 2.85417 10.7461C3.40267 12.3859 4.99315 13.5783 6.87756 13.611C5.40388 14.7167 3.54573 15.3739 1.52749 15.3739C1.17976 15.3739 0.837236 15.3537 0.5 15.3173C2.40671 16.4896 4.67036 17.1732 7.10327 17.1732C15.028 17.1732 19.3597 10.8881 19.3597 5.43741L19.3453 4.90341C20.1917 4.32537 20.9239 3.59912 21.5 2.77233Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                            <a href="https://www.linkedin.com" class="contacts-media__href">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.995 20L20 19.9992V12.6642C20 9.07583 19.2275 6.31167 15.0325 6.31167C13.0158 6.31167 11.6625 7.41833 11.11 8.4675H11.0517V6.64667H7.07416V19.9992H11.2158V13.3875C11.2158 11.6467 11.5458 9.96334 13.7017 9.96334C15.8258 9.96334 15.8575 11.95 15.8575 13.4992V20H19.995Z"
+                                        fill="#787A80" />
+                                    <path d="M0.329995 6.6475H4.47666V20H0.329995V6.6475Z" fill="#787A80" />
+                                    <path
+                                        d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0Z"
+                                        fill="#787A80" />
+                                </svg>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="popup__close popup-login__close">&#10006</div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>

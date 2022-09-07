@@ -1,36 +1,43 @@
-html{
+html {
     font-size: 10px;
 }
-body{
+body {
     font-size: 1.6rem;
     font-weight: 400;
     font-family: "Lato", "Verdana", sans-serif;
     line-height: 130%;
     color: $color-text;
-    &._lock{
+
+    &._lock {
         overflow: hidden;
     }
-    background-color: #fafafa;;
+
+    background-color: #fafafa;
+    ;
 }
-.wrapper{
+
+.wrapper {
     overflow: hidden;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.container{
+.container {
     max-width: $content-width;
     margin: 0 auto;
-    @include media-laptop{
+
+    @include media-laptop {
         padding-right: 15px;
         padding-left: 15px;
     }
 }
-main{
+
+main {
     flex: 1 0 auto;
 }
-footer{
+
+footer {
     flex: 0 0 auto;
 }

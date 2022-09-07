@@ -30,176 +30,218 @@
 @import "./blog page/blogSubscribe";
 @import "./contacts/contacts";
 @import "./contacts/contactsUser";
+@import "./components/popup";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.block{
+.block {
     padding-top: 180px;
-    @include media-tablet{
+
+    @include media-tablet {
         padding-top: 100px;
     }
 }
 
-.text_colored{
+.text_colored {
     color: $color-brand;
 }
 
-._uppercase{
+._uppercase {
     text-transform: uppercase;
 }
-._centered{
+
+._centered {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-.button_colored{
+
+.button_colored {
     padding: 12px 40px;
     background-color: $color-brand;
     color: $color-white;
     border-radius: 4px;
     @include font(1.6rem, 700, 160%);
-    @include media-laptop{
+
+    @include media-laptop {
         font-size: 2rem;
     }
-    @include media-tablet{
+
+    @include media-tablet {
         padding: 10px 20px;
         text-align: center;
         font-size: 1.4rem;
     }
 }
-.button_invisible{
+
+.button_invisible {
     padding: 12px 40px;
     border-radius: 4px;
     @include font(1.6rem, 700, 160%);
-    @include media-laptop{
+
+    @include media-laptop {
         font-size: 2rem;
     }
-    img{
+
+    img {
         margin-right: 10px;
     }
-    @include media-tablet{
+
+    @include media-tablet {
         padding: 10px 20px;
         text-align: center;
         font-size: 1.4rem;
     }
 }
-.button_bordered{
+
+.button_bordered {
     padding: 12px 40px;
     border-radius: 4px;
     border: 1px solid $color-brand;
     color: $color-brand;
     @include font(1.6rem, 700, 160%);
-    @include media-laptop{
+
+    @include media-laptop {
         font-size: 2rem;
     }
-    img{
+
+    img {
         margin-right: 10px;
     }
 }
-.href_colored{
+
+.href_colored {
     color: $color-brand;
 }
-.title{
+
+.title {
     @include font(4.6rem, 900, 130%);
     color: $color-text;
-    @include media-tablet{
+
+    @include media-tablet {
         font-size: 3.2rem
     }
 }
-.text{
+
+.text {
     @include font(1.6rem, 400, 160%);
     color: $color-grey;
-    @include media-tablet{
+
+    @include media-tablet {
         font-size: 2rem;
     }
 }
-.background-block{
+
+._colored {
+    color: $color-brand;
+}
+
+.background-block {
     background-image: linear-gradient(55.95deg, rgb(255 63 58 / 27%) 0%, rgb(247 94 5 / 27%) 100%);
 }
 
-h2{
+h2 {
     @include font(4.6rem, 900, 130%);
 }
-h3{
+
+h3 {
     @include font(3.2rem, 900, 130%);
 }
-h4{
+
+h4 {
     @include font(2.8rem, 700, 150%);
 }
-h6{
+
+h6 {
     @include font(1.6rem, 700, 150%);
 }
-.minititle{
+
+.minititle {
     padding-bottom: 8px;
     text-transform: uppercase;
 }
-._bold{
+
+._bold {
     font-weight: 700;
 }
 
-.course-item{
+.course-item {
     border: 1px solid #E5E8ED;
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
     cursor: pointer;
-    
+
 }
-.course-item__info{
-    @include media-tablet{
+
+.course-item__info {
+    @include media-tablet {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 }
+
 .course-item__field {
     @include font(1.4rem, 400, 150%);
     color: $color-white;
     padding: 1px 8px;
     border-radius: 4px;
     display: inline-block;
-    &._marketing{
+
+    &._marketing {
         background-color: #03CEA4;
     }
-    &._hr{
+
+    &._hr {
         background-color: #F89828;
     }
-    &._management{
+
+    &._management {
         background-color: #5A87FC;
     }
-    &._design{
+
+    &._design {
         background-color: #F52F6E;
     }
-    &._development{
+
+    &._development {
         background-color: #7772F1;
     }
 }
-.course-item__occupation{
+
+.course-item__occupation {
     @include font(2rem, 700, 150%);
     padding: 20px 0;
-    @include media-tablet{
-        font-size: 1,7rem;
+
+    @include media-tablet {
+        font-size: 1, 7rem;
     }
 }
-.course-item__bottom{
+
+.course-item__bottom {
     display: flex;
     align-items: center;
 }
-.course-item__price{
+
+.course-item__price {
     @include font (1.8rem, 700, 150%);
     color: $color-brand;
     margin-right: 8px;
 }
-.course-item__name{
+
+.course-item__name {
     @include font(1.8rem, 400, 150%);
     padding-left: 8px;
     color: $color-grey-light;
     border-left: 1px solid $color-grey-light;
 }
-.swiper__prev, .swiper__next{
+
+.swiper__prev,
+.swiper__next {
     position: absolute;
     display: inline-block;
     width: 48px;
@@ -212,10 +254,12 @@ h6{
     border-radius: 50px;
     cursor: pointer;
 }
-.swiper__next{
+
+.swiper__next {
     background-color: $color-brand;
 }
-.search-form__input{
+
+.search-form__input {
     padding: 9px 12px;
     border-right: none;
     border-radius: 4px;
@@ -223,29 +267,70 @@ h6{
     width: 100%;
     outline: none;
 }
-.search-form{
+
+.search-form {
     display: flex;
     border-radius: 4px;
     border: 1px solid #D7DADD;
     height: 42px;
 }
-.search-form__button{
+
+.search-form__button {
     padding: 9px 12px;
     border-left: none;
     margin-left: -2px;
     border-radius: 4px;
 }
-.numbering{
+
+.numbering {
     display: flex;
     justify-content: center;
     margin-top: 60px;
 }
-.numbering__item{
+
+.numbering__item {
     margin-right: 20px;
     @include font(1.6rem, 700, 150%);
-    &._active{
+
+    &._active {
         color: $color-brand;
     }
 }
 
+.blogSubscribe-check {
+    @include font(1.6rem, 400, 150%);
+    line-height: 2.6rem;
+    padding-left: 25px;
+}
 
+.check__box {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $color-brand;
+    border-radius: 4px;
+    margin-left: -25px;
+    margin-top: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.check__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: react(0 0 0 0);
+}
+
+.check__input:checked+.check__box {
+    background-image: url(../images/icons/check.svg );
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    color: #9A9CA5;
+    padding: 13px 16px;
+}

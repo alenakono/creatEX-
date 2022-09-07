@@ -1,15 +1,18 @@
-%transition{
+%transition {
     transition: all 0.5s ease-in-out;
-    
+
 }
-%hover__button_colored{
+
+%hover__button_colored {
     background-color: $color-brand;
     cursor: pointer;
     color: $color-white;
 }
-.button_colored{
+
+.button_colored {
     @extend %transition;
-    &:hover{
+
+    &:hover {
         background-color: #ffffff07;
         border: 1px solid $color-brand;
         color: $color-text;
@@ -17,68 +20,89 @@
     }
 }
 
-.lectures-item__button, .button_bordered{
+.lectures-item__button,
+.button_bordered {
     @extend %transition;
-    &:hover{
+
+    &:hover {
         @extend %hover__button_colored;
 
     }
 }
-.course-item, .lectures-item{
+
+.course-item,
+.lectures-item {
     @extend %transition;
-    &:hover{
+
+    &:hover {
         box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     }
 }
-.swiper__prev, .swiper__next{
+
+.swiper__prev,
+.swiper__next {
     @extend %transition;
-    &:hover{
+
+    &:hover {
         background-color: $color-brand;
     }
 }
-.footer__sociallink{
+
+.footer__sociallink {
     @extend %transition;
-    &:hover{
+
+    &:hover {
         opacity: 1;
     }
 }
-.courseOnline-filter__item{
+
+.courseOnline-filter__item {
     @extend %transition;
-    &:hover{
+
+    &:hover {
         color: $color-brand;
         border-radius: 4px;
         border: 1px solid $color-brand;
-    }
-    
-}
-.eventsLectures-numbering__item{
-    @extend %transition;
-    &:hover{
-        color: $color-brand;
-    }
-}
-.aboutDirections-item{
-    @extend %transition;
-    &:hover{
-        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
-    }
-    
-}
-.aboutDirections-item__button{
-    @extend %transition;
-    &:hover{
-        color: $color-brand;
-    }
-}
-.contacts-media__href{
-    @extend %transition;
-    &:hover{
-        svg path{
+
+        svg path {
             fill: $color-brand;
         }
     }
-    
+
 }
 
+.eventsLectures-numbering__item {
+    @extend %transition;
 
+    &:hover {
+        color: $color-brand;
+    }
+}
 
+.aboutDirections-item {
+    @extend %transition;
+
+    &:hover {
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    }
+
+}
+
+.aboutDirections-item__button {
+    @extend %transition;
+
+    &:hover {
+        color: $color-brand;
+    }
+}
+
+.contacts-media__href {
+    @extend %transition;
+
+    &:hover {
+        svg path {
+            fill: $color-brand;
+        }
+    }
+
+}
