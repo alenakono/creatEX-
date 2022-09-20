@@ -63,27 +63,30 @@ const closePopup = document.querySelectorAll('.popup__close');
 const popupLogin = document.getElementById('popup-login');
 const popupRegister = document.getElementById('popup-register');
 const popups = document.querySelectorAll('.popup');
+const popupForm = document.querySelectorAll('.popup__form');
+const body = document.querySelector('body');
 
 if (popups) {
   openPopupLogin.forEach(button => {
     button.addEventListener('click', () => {
       popupLogin.classList.add('_active');
+      body.classList.add('_lock');
     });
   });
   openPopupRegister.addEventListener('click', () => {
     popupRegister.classList.add('_active');
+    body.classList.add('_lock');
   });
   closePopup.forEach(close => {
     close.addEventListener('click', () => {
       popups.forEach(popup => {
         popup.classList.remove('_active');
+        body.classList.remove('_lock');
+
+      });
+      popupForm.forEach(form => {
+        form.reset();
       });
     });
-  });
-}
-if (popupRegister) {
-  const registerClose = popupRegister.querySelector('.popup-login__open');
-  registerClose.addEventListener('click', () => {
-    popupRegister.classList.remove('_active');
   });
 }
